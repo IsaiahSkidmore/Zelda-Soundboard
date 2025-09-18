@@ -120,15 +120,41 @@ body {
 }
 
 
-/* .button-image {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-  display: block;
-  margin: auto;
-  pointer-events: none;
-} */
+@media (max-width: 600px) {
+  .button {
+    scale: 80%;
+  }
+}
 
+@media (max-width: 600px) {
+  .button-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    scale: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .button-container {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .button {
+    scale: 60%;
+  }
+}
+
+@media (max-width: 410px) {
+  .button-container {
+    gap: 3rem;
+  }
+}
 
 
 /* BUTTON COLORS AND SHADOWS */
