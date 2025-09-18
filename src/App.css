@@ -1,0 +1,243 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  --button1: #94DE7B;
+  --button2: #EB4340;
+  --button3: #FDF580;
+  --button4: #FC9BC5;
+  --button5: #6D9EF9;
+  --button6: #FFA66A;
+  --button7: #9BFCC2;
+  --button8: #DB97FF;
+  --button9: #FF6A6D;
+
+  --shadow1: #6B9F59;
+  --shadow2: #AA312F;
+  --shadow3: #C9C259;
+  --shadow4: #C77699;
+  --shadow5: #457BAA;
+  --shadow6: #C8885E;
+  --shadow7: #66A07E;
+  --shadow8: #8F65A5;
+  --shadow9: #AE5254;
+
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #232D72;
+  color: #ffffff;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* BUTTON CSS */
+
+.button-container {
+  /* display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 3rem; 
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  scale: 80%; */
+   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 responsive columns */
+  gap: 5rem; /* slightly smaller gap for better fit */
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  justify-items: center;
+
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  transition: transform 100ms, box-shadow 100ms;
+  width: 100%;           /* Button fills grid cell */
+  max-width: 300px;      /* Prevents button from getting too large */
+  min-width: 180px;       /* Prevents button from getting too small */
+  aspect-ratio: 1 / 1;  /* Ensures button is always a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  user-select: none;
+  background-image: url('./assets/images/triforce.png');
+  background-size: 75% auto;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+}
+
+
+/* .button-image {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  pointer-events: none;
+} */
+
+
+
+/* BUTTON COLORS AND SHADOWS */
+
+#button1 {
+  background-color: var(--button1);
+  box-shadow: 0 18px 0 var(--shadow1);
+}
+
+#button2 {
+  background-color: var(--button2);
+  box-shadow: 0 18px 0 var(--shadow2);
+}
+
+#button3 {
+  background-color: var(--button3);
+  box-shadow: 0 18px 0 var(--shadow3);
+}
+
+#button4 {
+  background-color: var(--button4);
+  box-shadow: 0 18px 0 var(--shadow4);
+}
+
+#button5 {
+  background-color: var(--button5);
+  box-shadow: 0 18px 0 var(--shadow5);
+}
+
+#button6 {
+  background-color: var(--button6);
+  box-shadow: 0 18px 0 var(--shadow6);
+}
+
+#button7 {
+  background-color: var(--button7);
+  box-shadow: 0 18px 0 var(--shadow7);
+}
+
+#button8 {
+  background-color: var(--button8);
+  box-shadow: 0 18px 0 var(--shadow8);
+}
+
+#button9 {
+  background-color: var(--button9);
+  box-shadow: 0 18px 0 var(--shadow9);
+}
+
+/* BUTTON EFFECTS */
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  filter: brightness(85%);
+}
+
+
+.button:active {
+  transform: translateY(4px);
+  box-shadow: 0 16px 0 rgba(0, 0, 0, 0.2);
+  scale: 0.98;
+}
+
+#button1:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow1);
+}
+
+#button2:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow2);
+}
+
+#button3:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow3);
+}
+
+#button4:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow4);
+}
+
+#button5:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow5);
+}
+
+#button6:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow6);
+}
+
+#button7:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow7);
+}
+
+#button8:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow8);
+}
+
+#button9:active {
+  transform: translateY(4px);
+  box-shadow: 0 13px 0 var(--shadow9);
+}
+
+
